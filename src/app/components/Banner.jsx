@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import Image from "next/image";
 import bgImage from "../../../public/banner.jpg"; 
+import Link from 'next/link';
 
 
 export default function Banner() {
@@ -29,15 +30,15 @@ export default function Banner() {
         <p className='font-bold text-xl my-4 fontext'>Your Daily Meal Assistant</p>
 
 
-        <motion.button
+        <Link href='/about'><motion.button
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 1 }}
     
         
-          className="mt-8 p-2 sm:p-5 text-2xl bg-orange-400  text-white font-semibold    w-auto sm:w-xl rounded-4xl shadow-2xl hover:shadow-2xl transition-all"
+          className="mt-8 p-2 sm:p-5 text-2xl bg-orange-400  text-white font-semibold    w-auto sm:w-xl rounded-4xl shadow-2xl hover:shadow-2xl hover:bg-orange-500 transition-all cursor-pointer"
         >
           Click Here <br className='sm:hidden' />to Know More
-        </motion.button>
+        </motion.button></Link>
       </motion.div>
 
      

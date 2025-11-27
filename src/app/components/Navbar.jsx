@@ -56,9 +56,13 @@ export default function Navbar() {
               <Link href="/" className={pathname === "/" ? "cliking active" : "cliking"}>Home</Link>
               <Link href="/menu" className={pathname === "/menu" ? "cliking active" : "cliking"}>Menu</Link>
               <Link href="/my-meals" className={pathname === "/my-meals" ? "cliking active" : "cliking"}>My meals</Link>
+
+              <Link href="/review" className={pathname === "/review" ? "cliking active" : "cliking"}>Reviews</Link>
               
                <Link href="/about" className={pathname === "/about" ? "cliking active" : "cliking"}>About</Link>
                <Link href="/contact" className={pathname === "/contact" ? "cliking active" : "cliking"}>Contact</Link>
+
+              
              
             </ul>
           </div>
@@ -130,10 +134,14 @@ export default function Navbar() {
             <Link href="/menu" className={pathname === "/menu" ? "cliking active" : "cliking"}>Menu</Link>
 
            <Link href="/my-meals" className={pathname === "/my-meals" ? "cliking active" : "cliking"}>My meals</Link>
+
+           <Link href="/review" className={pathname === "/review" ? "cliking active" : "cliking"}>Reviews</Link>
               
                <Link href="/about" className={pathname === "/about" ? "cliking active" : "cliking"}>About</Link>
 
                <Link href="/contact" className={pathname === "/contact" ? "cliking active" : "cliking"}>Contact</Link>
+
+               
 
             
 
