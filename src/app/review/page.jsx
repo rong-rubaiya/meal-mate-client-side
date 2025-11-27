@@ -176,14 +176,14 @@ export default function ReviewsPage() {
           </div>
           <button
             onClick={handleSubmit}
-            className="px-4 py-2 bg-green-500 hover:bg-green-700 text-white rounded"
+            className="px-4 py-2 bg-green-500 hover:bg-green-700 text-white rounded "
           >
             Submit Review
           </button>
         </div>
 
         {/* Reviews */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6">
           {reviews.map((review, index) => (
             <motion.div
               key={index}
@@ -192,7 +192,7 @@ export default function ReviewsPage() {
               transition={{ delay: index * 0.1, duration: 0.5 }}
               className="bg-white shadow-lg rounded-xl p-6 border-l-4 border-orange-400 hover:scale-105 transition-transform"
             >
-              <div className="flex items-center mb-4">
+              <div className="sm:flex items-center mb-4">
                 <img
                   src={review.image || "https://randomuser.me/api/portraits/lego/1.jpg"}
                   alt="User"

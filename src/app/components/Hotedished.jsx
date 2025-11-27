@@ -38,7 +38,7 @@ export default function Hotedished() {
               className="bg-white rounded-t-full overflow-hidden border border-gray-200 shadow-sm w-sm  flex-shrink-0"
             >
               {/* Image */}
-              <div className="relative h-36 w-full">
+              <div className="relative h-40 w-full">
                <img
   src={dish.image || "/placeholder.png"}
   alt={dish.name}

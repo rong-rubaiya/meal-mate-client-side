@@ -140,7 +140,7 @@ export default function MyMealsPage() {
   return (
     
       <div className="max-w-6xl mx-auto px-4 py-10">
-        <h1 className="text-3xl font-bold mb-8 text-center">My Orders</h1>
+        <h1 className=" text-3xl sm:text-5xl fontext font-bold mb-8 text-center">My Orders</h1>
 
         {orders.length === 0 ? (
           <p className="text-center text-gray-500">You have no orders yet.</p>

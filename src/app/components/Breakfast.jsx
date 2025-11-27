@@ -42,7 +42,7 @@ export default function Breakfast() {
 
   return (
     <div>
-      <h2 className="text-3xl font-bold mb-8 text-center">Breakfast Meals</h2>
+      <h2 className="text-3xl sm:text-5xl font-bold fontext mt-20 mb-8 text-center">Breakfast Meals</h2>
 
       {/* sort */}
 
@@ -67,9 +67,9 @@ export default function Breakfast() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-10">
         {meals.map((meal) => (
-          <div key={meal._id} className="relative mx-auto w-full max-w-md bg-green-900 rounded-t-full shadow-xl hover:bg-green-950 cursor-pointer hover:shadow-2xl transition-all duration-300 border border-gray-200 overflow-hidden ">
-            <div className="relative w-full h-52">
-              <div className="absolute inset-0 rounded-b-[50%] overflow-hidden shadow-inner">
+          <div key={meal._id} className="relative mx-auto w-full max-w-md bg-green-900 rounded-2xl sm:rounded-t-full shadow-xl hover:bg-green-950 cursor-pointer hover:shadow-2xl transition-all duration-300 border border-gray-200 overflow-hidden ">
+            <div className="relative w-full h-42 sm:h-70">
+              <div className="absolute   inset-0 rounded-b-[50%] overflow-hidden shadow-inner">
                 <img src={meal.image || "#"} // fallback image
   alt={meal.name || "Meal image"} className="w-full h-full object-cover"/>
               </div>

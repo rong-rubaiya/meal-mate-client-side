@@ -44,7 +44,7 @@ export default function Lunch() {
 
   return (
      <div className="">
-      <h2 className="text-3xl font-bold mb-8 text-center">Lunch Meals</h2>
+      <h2 className="text-3xl sm:text-5xl font-bold fontext mt-20 mb-8 text-center">Lunch Meals</h2>
 
       {/* sort */}
 
@@ -71,11 +71,11 @@ export default function Lunch() {
         {meals.map((meal) => (
           <div
             key={meal._id}
-            className="relative mx-auto w-full max-w-md bg-orange-300 rounded-t-full  shadow-xl hover:shadow-2xl hover:bg-orange-400 cursor-pointer transition-all duration-300 border border-gray-200 overflow-hidden"
+            className="relative mx-auto w-full max-w-md bg-orange-300 rounded-2xl sm:rounded-t-full  shadow-xl hover:shadow-2xl hover:bg-orange-400 cursor-pointer transition-all duration-300 border border-gray-200 overflow-hidden"
           >
 
-            {/* Top Plate Shape */}
-            <div className="relative w-full h-52">
+           
+            <div className="relative w-full h-42 sm:h-70">
               <div className="absolute inset-0 rounded-b-[50%] overflow-hidden shadow-inner">
                 <img
                  src={meal.image || "/#"} // fallback image
