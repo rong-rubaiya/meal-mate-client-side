@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 
-const BACKEND_URL = "http://localhost:5000";
+const BACKEND_URL = "https://y-one-rose.vercel.app";
 
 export default function TopReviews() {
   const [reviews, setReviews] = useState([]);
