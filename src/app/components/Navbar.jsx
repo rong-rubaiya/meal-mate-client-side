@@ -55,6 +55,7 @@ export default function Navbar() {
             <ul className="flex flex-row gap-10 font-bold fontext text-xl">
               <Link href="/" className={pathname === "/" ? "cliking active" : "cliking"}>Home</Link>
               <Link href="/menu" className={pathname === "/menu" ? "cliking active" : "cliking"}>Menu</Link>
+
               <Link href="/my-meals" className={pathname === "/my-meals" ? "cliking active" : "cliking"}>My meals</Link>
 
               <Link href="/review" className={pathname === "/review" ? "cliking active" : "cliking"}>Reviews</Link>

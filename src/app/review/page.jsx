@@ -219,7 +219,7 @@ export default function ReviewsPage() {
                   <div className="flex flex-col gap-1 ml-4">
                     <button
                       onClick={() => handleUpdate(review)}
-                      className="px-2 py-1 bg-blue-500 text-white rounded hover:bg-blue-600"
+                      className="px-2 py-1 bg-green-600 text-white rounded hover:bg-green-900"
                     >
                       Update
                     </button>
