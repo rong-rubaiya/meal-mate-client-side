@@ -35,7 +35,7 @@ export default function Banner() {
           transition={{ repeat: Infinity, duration: 1 }}
     
         
-          className="mt-8 p-2 sm:p-5 text-2xl bg-orange-400  text-white font-semibold    w-auto sm:w-xl rounded-4xl shadow-2xl hover:shadow-2xl hover:bg-orange-500 transition-all cursor-pointer"
+          className="mt-8 p-4 sm:p-5 text-sm sm:text-2xl bg-orange-400  text-white font-semibold    w-full sm:w-xl rounded-4xl shadow-2xl hover:shadow-2xl hover:bg-orange-500 transition-all cursor-pointer"
         >
           Click Here <br className='sm:hidden' />to Know More
         </motion.button></Link>

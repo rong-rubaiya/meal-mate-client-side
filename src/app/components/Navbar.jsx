@@ -46,9 +46,9 @@ export default function Navbar() {
       <div className="mx-auto w-11/12">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div>
+         <Link href='/'> <div>
             <Image src={logo} alt="logo" className="h-20 w-20 rounded-full" />
-          </div>
+          </div></Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:block">
