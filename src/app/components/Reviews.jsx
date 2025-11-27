@@ -31,11 +31,11 @@ export default function TopReviews() {
   if (loading) return <p className="text-center mt-10">Loading top reviews...</p>;
 
   return (
-    <div className="max-w-7xl mx-auto py-12 px-4">
+    <div className="w-11/12 mx-auto py-12 ">
       <div className="flex justify-between items-center mb-10">
         <h2 className="text-4xl font-bold">Top Reviews</h2>
         <button
-          onClick={() => router.push("/reviews")}
+          onClick={() => router.push("/review")}
           className="px-6 py-3 bg-orange-400 text-white font-semibold rounded-full hover:bg-orange-500 transition"
         >
           Write a Review
