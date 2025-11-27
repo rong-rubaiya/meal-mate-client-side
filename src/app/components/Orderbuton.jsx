@@ -43,7 +43,7 @@ export default function OrderButton({ meal, category }) {
     };
 
     try {
-      const res = await fetch("https://meal-mate-server-lake.vercel.app/orders", {
+      const res = await fetch("https://y-one-rose.vercel.app/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(orderData),

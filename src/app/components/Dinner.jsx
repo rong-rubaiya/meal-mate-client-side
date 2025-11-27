@@ -8,7 +8,7 @@ export default function Dinner() {
   const [meals, setMeals] = useState([]);
 
   useEffect(() => {
-    fetch("https://meal-mate-server-lake.vercel.app/dinnermeals")
+    fetch("https://y-one-rose.vercel.app/dinnermeals")
       .then(res => res.json())
       .then(data => setMeals(data))
       .catch(err => console.error(err));
@@ -19,21 +19,21 @@ export default function Dinner() {
   const text = e.target.value;
 
   if (text === "low") {
-    fetch("https://meal-mate-server-lake.vercel.app/dinnermeals/sort/low-high")
+    fetch("https://y-one-rose.vercel.app/dinnermeals/sort/low-high")
       .then(res => res.json())
       .then(data => setMeals(data))
       .catch(err => console.log(err));
   }
 
   if (text === "high") {
-    fetch("https://meal-mate-server-lake.vercel.app/dinnermeals/sort/high-low")
+    fetch("https://y-one-rose.vercel.app/dinnermeals/sort/high-low")
       .then(res => res.json())
       .then(data => setMeals(data))
       .catch(err => console.error(err));
   }
 
   if (text === "all") {
-    fetch("https://meal-mate-server-lake.vercel.app/dinnermeals")
+    fetch("https://y-one-rose.vercel.app/dinnermeals")
       .then(res => res.json())
       .then(data => setMeals(data))
       .catch(err => console.error(err));

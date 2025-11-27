@@ -13,7 +13,7 @@ export default function SingleBreakfastPage() {
   useEffect(() => {
     if (!id) return;
 
-    fetch(`https://meal-mate-server-lake.vercel.app/lunchmeals/${id}`)
+    fetch(`https://y-one-rose.vercel.app/lunchmeals/${id}`)
       .then(res => res.json())
       .then(data => {
         console.log("Full API response:", data);

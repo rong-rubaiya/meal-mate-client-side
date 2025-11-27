@@ -18,7 +18,7 @@ export default function AboutPage() {
       return;
     }
     try {
-      const res = await fetch("https://meal-mate-server-lake.vercel.app/complaints", {
+      const res = await fetch("https://y-one-rose.vercel.app/complaints", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, complaint }),
