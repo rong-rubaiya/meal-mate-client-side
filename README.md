@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🍽️ Meal-Mate
 
-## Getting Started
+![Meal-Mate Banner]([https://via.placeholder.com/800x200?text=Meal-Mate](https://raw.githubusercontent.com/rong-rubaiya/meal-mate-client-side/refs/heads/main/Screenshot%202025-11-27%20115608.png))  
+_A smart meal ordering platform to make your dining experience effortless and enjoyable!_
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Project Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Meal-Mate** is a modern web application designed to help users **discover, order, and enjoy meals** with ease. This client-side application is built using **React.js & Next.js**, providing a **fast, responsive, and user-friendly interface**.  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Whether you're a hungry customer or a home cook, Meal-Mate makes **meal management seamless**.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend:** Next.js, React.js, Tailwind CSS  
+- **Animations:** Framer Motion  
+- **Icons:** React Icons  
+- **Authentication:** Firebase & NextAuth.js  
+- **API Integration:** REST API (Express.js backend)  
+- **Deployment:** Vercel  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Features (Available Now)
 
-## Deploy on Vercel
+- 🌟 **Top-rated meals section** – Quickly discover popular meals.  
+- 🔍 **Search & Filter** – Find meals by type, price, and rating.  
+- 🛒 **Order meals** – Seamlessly place orders from your favourite meals.  
+- 🔐 **Authentication** – Sign in securely using email or Google.  
+- 📱 **Responsive Design** – Works on mobile, tablet, and desktop.  
+- ✨ **Smooth Animations** – Engaging transitions powered by Framer Motion.  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🆕 Upcoming Features
+
+- 👩‍🍳 **Cooker Dashboard** – Cooks can add, edit, or remove meals.  
+- 📊 **Meal Analytics** – Track popular dishes and order statistics.  
+- 💬 **Customer Reviews** – Users can rate meals and leave feedback.  
+- 🛎️ **Notifications** – Real-time updates for orders and promotions.  
+- 🧾 **Order History** – Users can see their past orders.  
+- 🌍 **Multi-language Support** – Expanding for wider audience.  
+
+
+
+---
+
+## 📂 Project Structure
+
+
+meal-mate-client/
+│
+├─ public/ # Static assets (images, icons)
+├─ src/
+│ ├─ components/ # Reusable UI components
+│ ├─ pages/ # Next.js pages
+│ ├─ context/ # React context for state management
+│ └─ styles/ # Tailwind CSS or custom styles
+├─ .env.local # Environment variables
+├─ package.json # Project dependencies
+└─ README.md # Project documentation
+
+---
+🌐 Deployment
+
+This project is deployed on Vercel for production.
+Live demo:[ Meal-Mate Live](https://meal-mate-client-side.vercel.app/)
+
