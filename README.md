@@ -1,6 +1,6 @@
 # 🍽️ Meal-Mate
 
-![Meal-Mate Banner]([https://via.placeholder.com/800x200?text=Meal-Mate](https://raw.githubusercontent.com/rong-rubaiya/meal-mate-client-side/refs/heads/main/Screenshot%202025-11-27%20115608.png))  
+![Meal-Mate Banner](https://raw.githubusercontent.com/rong-rubaiya/meal-mate-client-side/main/Screenshot%202025-11-27%20115608.png)
 _A smart meal ordering platform to make your dining experience effortless and enjoyable!_
 
 ---
