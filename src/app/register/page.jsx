@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import LoginGoogle from "../components/LoginGoogle";
 import { auth } from "@/lib/firebase";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import Swal from "sweetalert2";
 
 export default function RegisterPage() {
   const [role, setRole] = useState("customer");
@@ -92,18 +93,31 @@ export default function RegisterPage() {
                 <span className="text-green-700 font-medium">Customer</span>
               </label>
 
-              <label className="flex items-center gap-2 cursor-pointer">
-                <motion.input
-                  whileTap={{ scale: 0.9 }}
-                  type="radio"
-                  name="role"
-                  value="chef"
-                  checked={role === "chef"}
-                  onChange={(e) => setRole(e.target.value)}
-                  className="accent-orange-500 w-4 h-4"
-                />
-                <span className="text-green-700 font-medium">Chef</span>
-              </label>
+              <label 
+  className="flex items-center gap-2 cursor-pointer"
+  onClick={() => {
+    Swal.fire({
+      icon: "warning",
+      title: "Not Allowed",
+      text: "You cannot select Chef role right now!",
+    });
+  }}
+>
+  <motion.input
+    whileTap={{ scale: 0.9 }}
+    type="radio"
+    name="role"
+    value="chef"
+    checked={role === "chef"}
+    onChange={() => {}} 
+    disabled
+    className="accent-orange-500 w-4 h-4 pointer-events-none opacity-50"
+  />
+
+  <span className="text-green-700 font-medium opacity-50">
+    Chef
+  </span>
+</label>
             </div>
           </div>
 
@@ -182,7 +196,7 @@ export default function RegisterPage() {
           {/* Bottom */}
           <p className="text-center text-sm text-gray-500 mt-5">
             Already have an account?{" "}
-            <a href="/login" className="text-orange-600 font-semibold hover:underline">
+            <a href="/login" className="text-orange-600 font-semibold hover:underline italic">
               Login
             </a>
           </p>

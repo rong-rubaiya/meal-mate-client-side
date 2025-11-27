@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import LoginGoogle from "../components/LoginGoogle";
 import { auth } from "@/lib/firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
+import Swal from "sweetalert2";
 
 export default function LoginPage() {
   const [role, setRole] = useState("customer");
@@ -81,17 +82,30 @@ export default function LoginPage() {
                 <span className="text-green-700 font-medium">Customer</span>
               </label>
 
-              <label className="flex items-center gap-2 cursor-pointer">
+               <label 
+                className="flex items-center gap-2 cursor-pointer"
+                onClick={() => {
+                  Swal.fire({
+                    icon: "warning",
+                    title: "Not Allowed",
+                    text: "You cannot select Chef role right now!",
+                  });
+                }}
+              >
                 <motion.input
                   whileTap={{ scale: 0.9 }}
                   type="radio"
                   name="role"
                   value="chef"
                   checked={role === "chef"}
-                  onChange={(e) => setRole(e.target.value)}
-                  className="accent-orange-500 w-4 h-4"
+                  onChange={() => {}} 
+                  disabled
+                  className="accent-orange-500 w-4 h-4 pointer-events-none opacity-50"
                 />
-                <span className="text-green-700 font-medium">Chef</span>
+              
+                <span className="text-green-700 font-medium opacity-50">
+                  Chef
+                </span>
               </label>
             </div>
           </div>
