@@ -16,7 +16,7 @@ export default function SingleBreakfastPage() {
   useEffect(() => {
     if (!id) return;
 
-    fetch(`http://localhost:5000/breakmeals/${id}`)
+    fetch(`https://meal-mate-server-lake.vercel.app/breakmeals/${id}`)
       .then(res => res.json())
       .then(data => {
         console.log("Full API response:", data);

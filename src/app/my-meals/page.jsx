@@ -32,7 +32,7 @@ export default function MyMealsPage() {
       return;
     }
 
-    fetch(`http://localhost:5000/orders?email=${userEmail}`)
+    fetch(`https://meal-mate-server-lake.vercel.app/orders?email=${userEmail}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.success) setOrders(data.orders);
@@ -57,7 +57,7 @@ export default function MyMealsPage() {
 
     if (confirm.isConfirmed) {
       try {
-        const res = await fetch(`http://localhost:5000/orders/${orderId}`, {
+        const res = await fetch(`https://meal-mate-server-lake.vercel.app/orders/${orderId}`, {
           method: "DELETE",
         });
         const data = await res.json();
@@ -98,7 +98,7 @@ export default function MyMealsPage() {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          const res = await fetch(`http://localhost:5000/orders/${order._id}`, {
+          const res = await fetch(`https://meal-mate-server-lake.vercel.app/orders/${order._id}`, {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(result.value),

@@ -9,7 +9,7 @@ export default function Hotedished() {
   const [dishes, setDishes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/top-rated-meals")
+    fetch("https://meal-mate-server-lake.vercel.app/top-rated-meals")
       .then(res => res.json())
       .then(data => setDishes(data))
       .catch(err => console.error("Failed to fetch dishes:", err));
